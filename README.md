@@ -35,8 +35,7 @@ The problem that i had on solving this challenge is to make the background of th
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify Website](https://my-summary-order.netlify.app/)
 
 ## My process
 
