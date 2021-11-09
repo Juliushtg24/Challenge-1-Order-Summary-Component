@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;1,400&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+body {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: initial;
+}
+
+.hero__banner {
+  margin: 50px auto;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hero__banner > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.plan__desc {
+  color: hsl(223, 47%, 23%);
+  margin: 10px 40px;
+}
+
+.plan__type {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 10px;
+  background-color: hsl(225, 100%, 98%);
+  height: 60px;
+  border-radius: 10px;
+}
+
+.plan__type > img {
+  width: 44px;
+  height: 44px;
+  margin: 8px 10px;
+  margin-right: 20px;
+}
+
+.type__annual {
+  flex-basis: 50%;
+  text-align: left;
+  margin: -10px 0;
+}
+
+.plan__type > a {
+  text-align: center;
+  margin: 14px 0;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.plan__type > a:hover {
+  color: hsl(225, 66%, 65%);
+  text-decoration: none;
+}
+.type__annual h3 {
+  font-size: 16px;
+  margin-bottom: -15px;
+}
+
+.button__option {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px 0;
+  margin: 10px auto;
+}
+
+.button__option > button {
+  font-size: 16px;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 40px 0px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-weight: 500s;
+}
+
+.button__option > button:hover {
+  cursor: pointer;
+  background-color: hsl(225, 66%, 65%);
+}
+
+.button__option > a {
+  text-decoration: none;
+  color: hsl(223, 47%, 23%);
+  font-weight: 500;
+}
+
+.button__option > a:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+
+  .hero__banner {
+    width: 80%;
+  }
+}
