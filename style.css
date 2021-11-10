@@ -15,7 +15,14 @@ p {
 
 body {
   background-image: url("./images/pattern-background-desktop.svg");
-  background-repeat: initial;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
 }
 
 .hero__banner {
@@ -75,9 +82,9 @@ body {
   color: hsl(225, 66%, 65%);
   text-decoration: none;
 }
-.type__annual h3 {
+.type__annual h2 {
   font-size: 16px;
-  margin-bottom: -15px;
+  margin-bottom: -12px;
 }
 
 .button__option {
@@ -116,12 +123,19 @@ body {
   font-weight: bold;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 375px) {
   body {
     background-image: url("./images/pattern-background-mobile.svg");
+    background-color: hsl(225, 100%, 94%);
   }
 
   .hero__banner {
     width: 80%;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 1500px) {
+  body {
+    background: url("./images/pattern-background-desktop.svg");
   }
 }
